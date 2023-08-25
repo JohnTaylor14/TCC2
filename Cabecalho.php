@@ -13,14 +13,13 @@
         const menuItems = document.querySelectorAll('.menu-list a');
 
         menuItems.forEach(item => {
-            item.addEventListener('click', function () {
+            item.addEventListener('click', function() {
                 menuItems.forEach(item => {
                     item.classList.remove('clicked');
                 });
                 this.classList.add('clicked');
             });
         });
-
     </script>
 
 </head>
@@ -28,15 +27,22 @@
     <div class="logo">
         <img src="imgs/logo.png" alt="Filmoteca">
         <h1>Filmoteca</h1>
+
         <?php
         session_start();
-        if(isset($_SESSION["username"])) {
+        if (isset($_SESSION["username"])) {
             echo '<h1>Bem-vindo, ' . $_SESSION["username"] . '</h1>';
             echo '<a href="logout.php" class="btn-logout">Sair</a>';
         } else {
             echo '<h1>Bem-vindo ao Site</h1>';
         }
+
+        if (!isset($_SESSION["username"])) {
+            header("Location: Login_e_Cadastro.php");
+            exit();
+        }
         ?>
+
     </div>
     <br>
     <nav>
@@ -51,4 +57,3 @@
 </header>
 
 <body>
-
