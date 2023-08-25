@@ -1,0 +1,202 @@
+body {
+    background: linear-gradient(to bottom,#007585, #4B2436);   
+    height: auto;
+    font-family: "Cinzel", sans-serif;
+    overflow-x: auto;
+    overflow-y: auto;
+    overflow: auto;
+    background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+.container {
+    margin-top: 94px;
+    margin-bottom: 10px;
+    background-color: #4B514F;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+th,td {
+    padding: 10px;
+    text-align: center; 
+    vertical-align: top;
+}
+
+th {
+    background-color: #4B514F;
+    color: aliceblue;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to bottom, #007585, #4B2436);
+    color: aliceblue;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    color: aliceblue;
+}
+
+
+/* Estilos para o cabeçalho */
+
+header {
+    background-image: url('imgs/cinema.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: #fff;
+}
+
+.menu-list {
+    background-color: #4B2436;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+}
+
+.menu-list li {
+    margin-right: 5%; 
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu-list a:hover {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+.menu-list a.clicked {
+    animation: blink-animation 1s infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        background-color: #fff;
+    }
+}
+
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 20%;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #4B2436;
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.social-media ul li img {
+    max-width: 30px;
+    height: auto;
+}
+
+
+/* Home */
+
+.btn-logout {
+    display: inline-block;
+    background: linear-gradient(to bottom, #007585, #4B2436);
+    color: aliceblue;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #d32f2f;
+}
